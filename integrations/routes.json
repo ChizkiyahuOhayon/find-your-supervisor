@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "sources": {
+    "ccfa": {
+      "url": "https://github.com/mikubaka88/CCFA-Skills",
+      "license": "MIT",
+      "bundled": false
+    },
+    "supervisor": {
+      "url": "https://github.com/HKUSTDial/Supervisor-Skills",
+      "license": "CC BY-NC-SA 4.0 (repository-level; check file-level)",
+      "bundled": false
+    },
+    "orchestra": {
+      "url": "https://github.com/Orchestra-Research/AI-Research-SKILLs",
+      "license": "MIT",
+      "bundled": false
+    }
+  },
+  "tasks": {
+    "literature": [
+      {
+        "source": "ccfa",
+        "path": "ccf-literature-searcher/SKILL.md"
+      },
+      {
+        "source": "supervisor",
+        "path": "skills/deep-research/SKILL.md"
+      }
+    ],
+    "idea-review": [
+      {
+        "source": "ccfa",
+        "path": "ccf-idea-reviewer/SKILL.md"
+      },
+      {
+        "source": "supervisor",
+        "path": "skills/idea-evaluator/SKILL.md"
+      }
+    ],
+    "idea-shaping": [
+      {
+        "source": "ccfa",
+        "path": "ccf-idea-optimizer/SKILL.md"
+      }
+    ],
+    "experiments": [
+      {
+        "source": "ccfa",
+        "path": "ccf-experiment-designer/SKILL.md"
+      }
+    ],
+    "integrity": [
+      {
+        "source": "ccfa",
+        "path": "ccf-integrity-auditor/SKILL.md"
+      }
+    ],
+    "writing": [
+      {
+        "source": "ccfa",
+        "path": "ccf-paper-writer/SKILL.md"
+      },
+      {
+        "source": "supervisor",
+        "path": "skills/paper-writer/SKILL.md"
+      }
+    ],
+    "figures": [
+      {
+        "source": "ccfa",
+        "path": "ccf-visual-composer/SKILL.md"
+      }
+    ],
+    "paper-review": [
+      {
+        "source": "ccfa",
+        "path": "ccf-paper-reviewer/SKILL.md"
+      },
+      {
+        "source": "supervisor",
+        "path": "skills/pre-submission-reviewer/SKILL.md"
+      }
+    ],
+    "engineering": [
+      {
+        "source": "orchestra",
+        "path": "03-fine-tuning/peft/SKILL.md"
+      },
+      {
+        "source": "orchestra",
+        "path": "10-optimization/flash-attention/SKILL.md"
+      },
+      {
+        "source": "orchestra",
+        "path": "08-distributed-training/accelerate/SKILL.md"
+      }
+    ]
+  }
+}

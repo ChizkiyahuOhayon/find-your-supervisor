@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "researcher_slug": "example-scholar",
+  "_note": "FICTIONAL SCHEMA EXAMPLE ONLY. Do not use to claim that a real scientist follows these patterns. Verify pages before compiling.",
+  "principles": [
+    {
+      "id": "method-01",
+      "principle": "Prefer a representation that makes a recurring failure mode measurable",
+      "supporting_paper_ids": [
+        "doi:10.0000/example.a",
+        "arxiv:2501.00001"
+      ],
+      "confidence": "hypothesis",
+      "student_application": "Test whether a smaller representation is sufficient for the student's target metric",
+      "falsification_test": "At equal parameters and latency, compare a minimal representation against the proposed representation on pre-registered held-out failures",
+      "field_counterexamples": [
+        "Hypothetical external work: a plain dense baseline may be more accurate in easy regimes"
+      ]
+    }
+  ]
+}

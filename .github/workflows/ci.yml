@@ -1,0 +1,24 @@
+name: Skill checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Lint Skill structure
+        run: python scripts/check_skill.py
+      - name: Validate fixture graph
+        run: python scripts/claim_graph.py validate assets/claim-graph.example.json
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate offline CLI
+        run: python scripts/supervisor.py --help
